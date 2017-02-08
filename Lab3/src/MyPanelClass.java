@@ -39,18 +39,9 @@ public class MyPanelClass extends JPanel {
         g.setColor(Color.GREEN);
         g.drawLine(width, y1, x1, height);
         
-        //g.setColor(Color.LIGHT_GRAY);
-        //g.fillOval((width/2)-30, (height/2)-30, 55, 55);
+        g.setColor(Color.LIGHT_GRAY);
+        g.fillOval((width/2)-30, (height/2)-30, 55, 55);
         
-        Polygon p = new Polygon();
-        p.addPoint(x1 + 5, y1 + 25);
-        p.addPoint(x1 + 20, y1 + 10);
-        p.addPoint(x1 + 35, y1 + 25);
-        p.addPoint(x1 + 25, y1 + 25);
-        p.addPoint(x1 + 25, y1 + 45);
-        p.addPoint(x1 + 15, y1 + 45);
-        p.addPoint(x1 + 15, y1 + 25);
-        g.setColor(Color.YELLOW);
-        g.fillPolygon(p);
+        
 	}
 }
