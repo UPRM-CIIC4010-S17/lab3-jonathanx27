@@ -23,26 +23,29 @@ public class MyPanelClass extends JPanel {
 		//Paint the background
 		g.setColor(Color.GRAY);
 		g.fillRect(x1, y1, width+1, height+1);
-//		 //Draw a border
+//		
+//		// Border 1
 //        g.setColor(Color.BLUE);
 //        g.drawRect(x1, y1, width, height);
-//        //Draw a border
+//        //Border 2
 //        g.setColor(Color.YELLOW);
 //        g.drawRect(x1+5, y1+5, width-10, height-10);
-//        //Draw a border
+//        //Border 3
 //        g.setColor(Color.RED);
 //        g.drawRect(x1+10, y1+10, width-20, height-20);
-//        
+//
+//		//LInes
 //        g.setColor(Color.MAGENTA);
 //        g.drawLine(x1, y1, x2, y2);
-//        
 //        g.setColor(Color.GREEN);
-//	      g.drawLine(width, y1, x1, height);
-//        
+//	    g.drawLine(width, y1, x1, height);
+//   
+//		//Oval
 //        g.setColor(Color.LIGHT_GRAY);
-//        g.fillOval((width/2)-30, (height/2)-30, 55, 55);
-//        
-//        Polygon p = new Polygon();
+//        g.fillOval((width/2)-27, (height/2)-27, 55, 55);
+//       
+//		//Arrow
+//       Polygon p = new Polygon();
 //        p.addPoint(x1 + 5, y1 + 25);
 //        p.addPoint(x1 + 20, y1 + 10);
 //        p.addPoint(x1 + 35, y1 + 25);
@@ -53,30 +56,41 @@ public class MyPanelClass extends JPanel {
 //        g.setColor(Color.YELLOW);
 //        g.fillPolygon(p);
 //        
-//        Polygon p2 = new Polygon();
-//        p2.addPoint(x1 + 25, y1 + 73);
-//        p2.addPoint(x1 + 41, y1 + 73);
-//        p2.addPoint(x1 + 47, y1 + 58);
-//        p2.addPoint(x1 + 53, y1 + 73);
-//        p2.addPoint(x1 + 69, y1 + 73);
-//        p2.addPoint(x1 + 56, y1 + 83);
-//        p2.addPoint(x1 + 61, y1 + 98);
-//        p2.addPoint(x1 + 47, y1 + 88);
-//        p2.addPoint(x1 + 34, y1 + 98);
-//        p2.addPoint(x1 + 38, y1 + 83);
-//        g.setColor(Color.WHITE);
-//        g.drawPolygon(p2);
 		
-		g.setColor(Color.RED);
-		g.fillRect(x1+10, y1+10, 210, 25);
-		g.setColor(Color.WHITE);
-		g.fillRect(x1+10, y1+35, 210, 25);
-		g.setColor(Color.RED);
-		g.fillRect(x1+10, y1+60, 210, 25);
-		g.setColor(Color.WHITE);
-		g.fillRect(x1+10, y1+85, 210, 25);
-		g.setColor(Color.RED);
-		g.fillRect(x1+10, y1+105, 210, 25);
 		
+		//Flag
+		g.setColor(Color.RED);
+		g.fillRect(x1+10, y1+10, 210, 28);
+		g.setColor(Color.WHITE);
+		g.fillRect(x1+10, y1+38, 210, 28);
+		g.setColor(Color.RED);
+		g.fillRect(x1+10, y1+66, 210, 28);
+		g.setColor(Color.WHITE);
+		g.fillRect(x1+10, y1+94, 210, 28);
+		g.setColor(Color.RED);
+		g.fillRect(x1+10, y1+122, 210, 28);
+		
+		//triangle
+		Polygon p3 = new Polygon();
+		p3.addPoint(x1 + 10, y1 + 10);
+	    p3.addPoint(x1 + 115, y1 + 80);
+	    p3.addPoint(x1 + 10, y1 + 150);
+	    g.setColor(Color.BLUE);
+        g.fillPolygon(p3);
+		
+		//Star
+        Polygon p2 = new Polygon();
+        p2.addPoint(x1 + 25, y1 + 73);
+        p2.addPoint(x1 + 41, y1 + 73);
+        p2.addPoint(x1 + 47, y1 + 58);
+        p2.addPoint(x1 + 53, y1 + 73);
+        p2.addPoint(x1 + 69, y1 + 73);
+        p2.addPoint(x1 + 56, y1 + 83);
+        p2.addPoint(x1 + 61, y1 + 98);
+        p2.addPoint(x1 + 47, y1 + 88);
+        p2.addPoint(x1 + 34, y1 + 98);
+        p2.addPoint(x1 + 38, y1 + 83);
+        g.setColor(Color.WHITE);
+        g.fillPolygon(p2);
 	}
 }
